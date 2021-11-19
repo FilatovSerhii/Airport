@@ -1,0 +1,56 @@
+@import '/src/flights/scss/variables.scss';
+
+.options {
+	height: 60px;
+	display: flex;
+
+	&__option {
+		display: flex;
+		align-items: center;
+		flex: 1;
+
+		font-size: 24px;
+		font-weight: 600;
+		text-decoration: none;
+		text-transform: uppercase;
+		line-height: 60px;
+		color: $color-blue;
+
+		background-color: white;
+		border-radius: 60px 60px 0 0;
+		z-index: 1;
+
+		&_blue {
+			color: white;
+			background-color: $background-color-blue-light;
+			transition: background-color 0.3s ease-in-out;
+			z-index: 0;
+
+			
+
+			&:hover {
+				background-color: $background-color-blue;
+			}
+		}
+
+		&_left {
+			padding-right: 100px;
+			justify-content: flex-end;
+		}
+
+		&_right {
+			padding-left: 100px;
+		}
+
+		&_blue.options__option_left {
+			margin-right: -60px;
+			border-radius: 60px 0 0 0;
+		}
+
+		&_blue.options__option_right {
+			margin-left: -60px;
+			border-radius: 0 60px 0 0;
+		}
+	}
+}
+

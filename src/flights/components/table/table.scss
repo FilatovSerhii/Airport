@@ -1,0 +1,110 @@
+@import '/src/flights/scss/variables.scss';
+
+.not-found {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.table {
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	&__terminal-field {
+		text-align: center;
+		font-weight: 700;
+		font-size: 22px;
+		color: $color-green;
+
+		span {
+			border: 1px solid $border-color-green;
+			border-radius: 50%;
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			line-height: 35px;
+		}
+
+		&_blue {
+			color: $color-blue;
+
+			span {
+				border: 1px solid $border-color-blue;
+			}
+		}
+	}
+
+	&__status-field {
+		min-width: 170px;
+	}
+
+	&__company-field {
+		min-width: 20px;
+		display: flex;
+		align-items: center;
+
+		img {
+			width: 65px;
+			height: 40px;
+			margin-right: 5px;
+		}
+	}
+
+	&__details-link {
+		opacity: 0;
+		color: $color-blue;
+		text-decoration: none;
+		border-bottom: 1px solid $border-color-blue;
+		transition: opacity 0.2s ease-out, border-bottom 0.2s ease-out;
+		cursor: pointer;
+
+		&:hover {
+			border-bottom: 0px solid transparent;
+		}
+	}
+}
+
+th {
+	text-align: left;
+	padding: 12px;
+	color: #95989a;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+td {
+	padding: 16px 10px;
+	line-height: 40px;
+}
+
+tr {
+	display: flex;
+	align-items: center;
+	& > * {
+		flex: 1;
+	}
+}
+
+tbody {
+	tr {
+		background-color: #fff;
+
+		&:nth-of-type(odd) {
+			background-color: rgba(0, 102, 135, 0.1);
+		}
+
+		&:hover {
+			box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+
+			.table__details-link {
+				opacity: 1;
+			}
+		}
+	}
+}

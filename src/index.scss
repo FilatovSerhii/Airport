@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;300;400;600;700&display=swap');
+@import '/src/flights/scss/variables.scss';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding-top: 92px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #e7efec;
+	color: $color-black;
+}
