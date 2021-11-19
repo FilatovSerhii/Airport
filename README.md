@@ -24,4 +24,5 @@ To build project in development mode use command: `npm start`
 ### Author
 
 - Filatov Sergey
-![image](https://user-images.githubusercontent.com/85936492/142623707-8f95badd-00a1-4370-9a6a-7da6c7856b9a.png)
+
+![image](https://user-images.githubusercontent.com/85936492/142623922-f3d0e104-a319-446a-8aec-3986b71e4cf1.png)
